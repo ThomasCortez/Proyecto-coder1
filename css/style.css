@@ -1,0 +1,69 @@
+/*reset de pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/*header*/
+header {
+    background-color: rgb(0, 0, 0);
+}
+nav div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav div a img {
+    height: 70px;
+    width: 200px;
+}
+
+h1 {
+    background-color: #111111;
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 30px;
+    backdrop-filter: blur(300px);
+}
+.nav-mi {
+
+    background-color: rgb(4, 6, 24);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*-------------BANNER------------*/
+.hero-sec {
+    background-image: url("../img/hero-img.webp");
+    background-repeat:no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    height: 50vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-sec h2 {
+    font-family: "Montserrat Underline";
+    font-size: 90px;
+    backdrop-filter: blur(1px);
+    color: black;
+}
+.hero-sec p {
+    font-size: xx-large;
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+.herobutton {
+    border-radius: 5px;
+    padding: 10px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #494949;
+    margin: 5px;
+}
