@@ -1,195 +1,290 @@
-/*reset de pagina*/
-*{
-    margin: 0;
-    padding: 0;
-}
-body {
-    background-color: black;
-}
-/*header*/
+/*----------HEADER---------*/
 header {
-    background-color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
 }
-header {
-    position: sticky;
-    top: 0 ;
-    z-index: 1;
+header nav div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-nav div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header nav div div a img {
+  height: 70px;
+  width: 200px;
 }
-nav div a img {
-    height: 70px;
-    width: 200px;
+header nav div div h1 {
+  background-color: #111111;
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  backdrop-filter: blur(300px);
+}
+header nav div div ul li .nav-mi {
+  background-color: rgb(4, 6, 24);
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-h1 {
-    background-color: #111111;
-    color: whitesmoke;
-    padding: 15px;
-    border-radius: 30px;
-    backdrop-filter: blur(300px);
-}
-.nav-mi {
-
-    background-color: rgb(4, 6, 24);
-    color: white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-}
 /*-------------BANNER------------*/
 .hero-sec {
-    background-image: url("../img/hero-img.webp");
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 50vh;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+  background-image: url("../img/hero-img.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 .hero-sec h2 {
-    font-family: "Montserrat Underline";
-    font-size: 90px;
-    backdrop-filter: blur(1px);
-    color: black;
+  font-family: "Montserrat Underline";
+  font-size: 90px;
+  backdrop-filter: blur(1px);
+  color: black;
 }
 .hero-sec p {
-    font-size: xx-large;
-    backdrop-filter: blur(3px);
-    border-radius: 30px;
-    color: rgb(255, 255, 255);
-    font-weight: 200;
+  font-size: xx-large;
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
 }
-.herobutton {
-    border-radius: 5px;
-    padding: 10px 7px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #494949;
-    margin: 5px;
+.hero-sec .linkbutton {
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #494949;
+  transition: scale 0.3s ease;
 }
-/*------------ Presentacion rapida -------------*/
-.presentacion {
-    height: 80vh;
-    background-color:#111111;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 35%);
-    grid-template-areas: 
-    " a b c"
-    " d d d";
-    row-gap: 25px;
-    padding: 20px;
-    align-content: center;
+.hero-sec .linkbutton:hover {
+  scale: 1.1;
 }
 
-.div-text {
-    grid-area: a ;
+/*------------ Presentacion rapida -------------*/
+.presentacion {
+  background-color: #111111;
+  color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-.presentacion .div-text p {
-    color: #fff;
-    font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: #fff;
-    border-radius: 10px;
-    width: 100%;
+.presentacion > p {
+  text-align: center;
+  font-size: large;
+  margin-bottom: 20px;
+  grid-column: 1/-1;
+  background-color: #111111;
+}
+.presentacion div {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .presentacion div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  max-width: 100%;
+  height: 300px;
+  border-radius: 10px;
 }
-.img-centro {
-    grid-area: b;
+.presentacion div p {
+  margin: 10px 0;
+  font-size: medium;
 }
-.img-mapa {
-    grid-area: c;
+.presentacion div .linkbutton {
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #494949;
+  font-size: medium;
+  margin-top: 10px;
 }
-.img-cons {
-    grid-area: d;
+.presentacion div .linkbutton:hover {
+  background-color: blue;
 }
 
 /*--------------Compra rapida/Tarjetas--------------*/
 .productos-imp {
-    background-color: rgb(5, 25, 27);
-    padding: 30px;
+  background-color: rgb(2, 52, 56);
+  padding: 30px;
 }
 .productos-imp h2 {
-    text-align: center;
-    color: azure;
-    text-decoration:underline;
-    font-size: 50px;
-    margin-bottom: 100px;
+  text-align: center;
+  color: azure;
+  text-decoration: underline;
+  font-size: 50px;
+  margin-bottom: 50px;
 }
-.cont-tarj {
-    display: flex;
-    justify-content: space-evenly;
+.productos-imp .cont-tarj {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.tarjeta {
-    width: 250px;
-    height: 310px;
-    border-radius: 5px;
-    background-color: #111111;
-    text-align: center;
-    justify-content: center;
-    border: 5px solid black;
+.productos-imp .cont-tarj .tarjeta {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #111111;
+  text-align: center;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.tarjeta img {
-    width: 230px;
-    height: 200px;
-    padding: 5px;
+.productos-imp .cont-tarj .tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-.tarjeta p {
-    color: #fff;
-    background-color: #494949;
-    padding: 5px;
+.productos-imp .cont-tarj .tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #494949;
 }
-.boton {
-    background-color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
-    width: auto;
-    padding: 5px;
-    color: black;
+.productos-imp .cont-tarj .tarjeta h3 {
+  color: #fff;
+  background-color: #494949;
+  padding: 10px;
+  font-size: medium;
 }
-/* --------footer---------- */
+.productos-imp .cont-tarj .tarjeta .boton {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.productos-imp .cont-tarj .tarjeta .boton:hover {
+  background-color: #494949;
+  color: #fff;
+}
+
+.main-motos {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.main-motos .filtros {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.main-motos .filtros h2 {
+  margin-bottom: 20px;
+}
+.main-motos .filtros form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-motos .filtros form label {
+  font-weight: bold;
+}
+.main-motos .filtros form button {
+  background-color: #007bff;
+  color: white;
+}
+.main-motos .produc-motos {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.main-motos .produc-motos h2 {
+  margin-bottom: 20px;
+}
+.main-motos .produc-motos .tarj-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+.main-motos .produc-motos .tarj-cont .tarj-motos {
+  background-color: #111111;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+}
+.main-motos .produc-motos .tarj-cont .tarj-motos img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.main-motos .produc-motos .tarj-cont .tarj-motos h3 {
+  margin: 10px 0;
+  font-size: large;
+  color: #fff;
+}
+.main-motos .produc-motos .tarj-cont .tarj-motos p {
+  font-size: medium;
+  color: #fff;
+}
+.main-motos .produc-motos .tarj-cont .tarj-motos button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-motos .produc-motos .tarj-cont .tarj-motos button:hover {
+  background-color: #218838;
+}
+
 footer {
-    background-color: black;
-    text-align: center;
-    padding: 20px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+footer p {
+  color: #fff;
 }
 footer h2 {
-    color: #fff;
-    text-decoration: dashed;
-    margin-bottom: 30px;
+  color: #fff;
+  text-decoration: dashed;
+  margin-bottom: 30px;
 }
 footer a {
-    margin-left: 70px;
-    margin-right: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 /* media */
-@media (max-width: 800px) {
-    .hero-sec h2{
-        font-size: 70px;
-    }
-}
 @media (max-width: 1200px) {
-    .div-text p {
-        font-size: 30px;
-    }
+  .div-text p {
+    font-size: 30px;
+  }
 }
 @media (max-width: 900px) {
-    .cont-tarj {
-        flex-direction: column; 
-        gap: 30px;
-        align-items: center;
-    }
+  .cont-tarj {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 }
+@media (max-width: 800px) {
+  .hero-sec h2 {
+    font-size: 50px;
+  }
+}
+/*reset de pagina*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

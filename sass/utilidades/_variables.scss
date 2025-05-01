@@ -1,0 +1,10 @@
+$color-pri: rgb(0, 0, 0);;
+$color-sec: #111111;
+$color-let: #fff;
+@mixin boton ( $col-let, $col-bac){
+    border-radius: 5px;
+    padding: 10px 7px;
+    text-decoration: none;
+    color: $col-let;
+    background-color: $col-bac;
+}

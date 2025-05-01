@@ -1,0 +1,17 @@
+footer {
+    background-color: $color-pri;
+    text-align: center;
+    padding: 20px;
+    p {
+        color: $color-let;
+    }
+    h2 {
+        color: $color-let;
+        text-decoration: dashed;
+        margin-bottom: 30px;
+    }
+    a {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}

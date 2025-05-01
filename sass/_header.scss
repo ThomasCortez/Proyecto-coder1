@@ -1,0 +1,41 @@
+/*----------HEADER---------*/
+header {
+    position: sticky;
+    top: 0 ;
+    z-index: 1;
+    background-color: $color-pri;
+    nav { 
+        div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            div {
+                a {
+                    img {
+                        height: 70px;
+                        width: 200px;
+                    }
+                }
+                h1 {
+                    background-color: $color-sec;
+                    color: $color-let;
+                    padding: 15px;
+                    border-radius: 30px;
+                    backdrop-filter: blur(300px);
+                }
+                ul {
+                    li {
+                        .nav-mi {
+
+                            background-color: rgb(4, 6, 24);
+                            color: $color-let;
+                            margin: 10px;
+                            padding: 10px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

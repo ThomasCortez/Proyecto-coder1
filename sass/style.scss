@@ -1,0 +1,12 @@
+@import './utilidades/variables';
+@import 'header';
+@import './pages/inicio';
+@import './pages/motos';
+@import 'footer';
+@import './utilidades/media';
+
+/*reset de pagina*/
+*{
+    margin: 0;
+    padding: 0;
+} 

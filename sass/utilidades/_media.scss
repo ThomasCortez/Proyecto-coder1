@@ -1,0 +1,19 @@
+/* media */
+
+@media (max-width: 1200px) {
+    .div-text p {
+    font-size: 30px;
+    }
+}
+@media (max-width: 900px) {
+    .cont-tarj {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    }
+}
+@media (max-width: 800px) {
+    .hero-sec h2 {
+            font-size: 50px;
+        }
+}

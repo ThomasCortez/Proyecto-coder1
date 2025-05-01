@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MotorXperience</title>
+</head>
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div>
+                        <a class="navbar-brand" href="#"><img src="../img/MX-logo.jpg" alt="MX-logo"></a>
+                        <h1>MotorXperience</h1>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link nav-mi" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-mi" href="#">Motos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-mi" href="./autos.html">Autos</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link nav-mi" href="./seguros.html">Seguros</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link nav-mi" href="./soporte.html">Soporte</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main-motos">
+
+            <aside class="filtros">
+                <h2>Filtros</h2>
+                <form>
+                    <label for="marca">Marca:</label>
+                    <select id="marca" name="marca">
+                        <option value="honda">Honda</option>
+                        <option value="yamaha">Yamaha</option>
+                        <option value="suzuki">Suzuki</option>
+                    </select>
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo" name="tipo">
+                        <option value="deportiva">Deportiva</option>
+                        <option value="scooter">Scooter</option>
+                        <option value="enduro">Enduro</option>
+                    </select>
+                    <button type="submit" class="">Aplicar filtros</button>
+                </form>
+            </aside>
+
+            <section class="produc-motos">
+                <h2>Nuestras motos</h2>
+                <div class="tarj-cont">
+                    <div class="tarj-motos">
+                        <img src="../img/motos/honda-cbr500.jpg" alt="honda-cbr500">
+                        <h3>Honda CBR 500R</h3>
+                        <p>$8,000</p>
+                        <button class="btn btn-success">Comprar</button>
+                    </div>
+                    <div class="tarj-motos">
+                        <img src="../img/motos/yamaha-mt07.jpg" alt="yamaha-mt07">
+                        <h3>Yamaha MT-07</h3>
+                        <p>$7,500</p>
+                        <button class="btn btn-success">Comprar</button>
+                    </div>
+                    <div class="tarj-motos">
+                        <img src="../img/motos/suzuki-gsxr750.jpg" alt="suzuki-gsxr750">
+                        <h3>Suzuki GSX-R750</h3>
+                        <p>$9,000</p>
+                        <button class="">Comprar</button>
+                    </div>
+                    <div class="tarj-motos">
+                        <img src="../img/motos/dominar-400.jpg" alt="dominar-400">
+                        <h3>Bajaj Dominar 400</h3>
+                        <p>$7,000</p>
+                        <button class="btn btn-success">Comprar</button>
+                    </div>
+                    <div class="tarj-motos">
+                        <img src="../img/motos/honda-cs350.jpg" alt="honda-cb350">
+                        <h3>Honda CB 350</h3>
+                        <p>$2,000</p>
+                        <button class="btn btn-success">Comprar</button>
+                    </div>
+                    <div class="tarj-motos">
+                        <img src="../img/motos/tnt-600.jpg" alt="tnt-600">
+                        <h3>Benelli TNT 600I</h3>
+                        <p>$10,000</p>
+                        <button class="">Comprar</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h2>Seguinos en nuestrass redes</h2>
+        <p>MotorXperience™</p>
+        <a href=""><img src="../img/whatsapp.png" alt="whatsapp"></img></a>
+        <a href=""><img src="../img/facebook.png" alt="facebook"></img></a>
+        <a href=""><img src="../img/instagram.png" alt="instagram"></img></a>
+    </footer>
+    <!-- link BS js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

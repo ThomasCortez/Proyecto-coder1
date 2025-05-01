@@ -1,0 +1,134 @@
+/*-------------BANNER------------*/
+.hero-sec {
+    background-image: url("../img/hero-img.webp");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment:scroll;
+    background-size:cover;
+    height: 60vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        font-family: "Montserrat Underline";
+        font-size: 90px;
+        backdrop-filter: blur(1px);
+        color: black;
+    }
+    p {
+        font-size: xx-large;
+        backdrop-filter: blur(3px);
+        border-radius: 30px;
+        color: rgb(255, 255, 255);
+        font-weight: 200;
+    }
+    .linkbutton {
+        @include boton($color-let, #494949); 
+        transition: scale 0.3s ease;
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
+/*------------ Presentacion rapida -------------*/
+.presentacion {
+    background-color: $color-sec;
+    color: $color-let;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    > p {
+        text-align: center;
+        font-size: large;
+        margin-bottom: 20px;
+        grid-column: 1 / -1; 
+        background-color: $color-sec;
+    }
+    div {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        img {
+            max-width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+        p {
+            margin: 10px 0;
+            font-size: medium;
+        }
+        .linkbutton {
+            @include boton($color-let, #494949);
+            font-size: medium;
+            margin-top: 10px;
+            &:hover {
+                background-color: blue;
+            }
+        }
+    }
+}
+/*--------------Compra rapida/Tarjetas--------------*/
+.productos-imp {
+    background-color: rgb(2, 52, 56);
+    padding: 30px;
+
+    h2 {
+        text-align: center;
+        color: azure;
+        text-decoration: underline;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    .cont-tarj {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+        .tarjeta {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            background-color: #111111;
+            text-align: center;
+            border: none;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0,);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            }
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-bottom: 3px solid #494949;
+            }
+            h3 {
+                color: #fff;
+                background-color: #494949;
+                padding: 10px;
+                font-size: medium;
+            }
+            .boton {
+                display: inline-block;
+                background-color: #fff;
+                border-radius: 10px;
+                text-decoration: none;
+                padding: 10px 20px;
+                color: black;
+                font-weight: bold;
+                margin: 10px 0;
+                &:hover {
+                    background-color: #494949;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
