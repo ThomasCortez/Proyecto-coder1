@@ -1,0 +1,44 @@
+#seguros {
+    .seguros-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: $color-sec;
+        color: $color-let;
+        div {
+            p {
+                font-size: large;
+            }
+        }
+        .cont-seguros {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            border-radius: 8px;
+            .img-seguro {
+                width: 100%;
+                height: 50vh;
+                border-radius: 8px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                    object-fit: fill;
+                }
+            }
+        }
+    }
+    .tabla-seg {
+        background-color: #494949;
+        padding: 10px;
+        border-radius: 10px;
+        color: $color-let;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}

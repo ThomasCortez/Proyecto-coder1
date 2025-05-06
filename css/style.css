@@ -176,10 +176,11 @@ header nav div div ul li .nav-mi {
   display: flex;
   gap: 20px;
   padding: 20px;
+  background-color: #002347;
 }
 .main-motos .filtros {
   flex: 1;
-  background-color: #f8f9fa;
+  background-color: #b6b9bd;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -203,36 +204,39 @@ header nav div div ul li .nav-mi {
   flex: 3;
   display: flex;
   flex-direction: column;
+  background-color: #022a53;
+  padding: 10px;
 }
 .main-motos .produc-motos h2 {
   margin-bottom: 20px;
+  color: #fff;
 }
-.main-motos .produc-motos .tarj-cont {
+.main-motos .produc-motos .tarj-cont-motos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
-.main-motos .produc-motos .tarj-cont .tarj-motos {
+.main-motos .produc-motos .tarj-cont-motos .tarj-motos {
   background-color: #111111;
   border-radius: 10px;
   text-align: center;
   padding: 15px;
 }
-.main-motos .produc-motos .tarj-cont .tarj-motos img {
+.main-motos .produc-motos .tarj-cont-motos .tarj-motos img {
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
-.main-motos .produc-motos .tarj-cont .tarj-motos h3 {
+.main-motos .produc-motos .tarj-cont-motos .tarj-motos h3 {
   margin: 10px 0;
   font-size: large;
   color: #fff;
 }
-.main-motos .produc-motos .tarj-cont .tarj-motos p {
+.main-motos .produc-motos .tarj-cont-motos .tarj-motos p {
   font-size: medium;
   color: #fff;
 }
-.main-motos .produc-motos .tarj-cont .tarj-motos button {
+.main-motos .produc-motos .tarj-cont-motos .tarj-motos button {
   margin-top: 10px;
   padding: 10px 20px;
   background-color: #28a745;
@@ -241,8 +245,163 @@ header nav div div ul li .nav-mi {
   border-radius: 5px;
   cursor: pointer;
 }
-.main-motos .produc-motos .tarj-cont .tarj-motos button:hover {
+.main-motos .produc-motos .tarj-cont-motos .tarj-motos button:hover {
   background-color: #218838;
+}
+
+.main-autos {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #002347;
+}
+.main-autos .filtros {
+  flex: 1;
+  background-color: #b6b9bd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.main-autos .filtros h2 {
+  margin-bottom: 20px;
+}
+.main-autos .filtros form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-autos .filtros form label {
+  font-weight: bold;
+}
+.main-autos .filtros form button {
+  background-color: #007bff;
+  color: white;
+}
+.main-autos .produc-autos {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #022a53;
+}
+.main-autos .produc-autos h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.main-autos .produc-autos .tarj-cont-autos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+.main-autos .produc-autos .tarj-cont-autos .tarj-autos {
+  background-color: #111111;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+}
+.main-autos .produc-autos .tarj-cont-autos .tarj-autos img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.main-autos .produc-autos .tarj-cont-autos .tarj-autos h3 {
+  margin: 10px 0;
+  font-size: large;
+  color: #fff;
+}
+.main-autos .produc-autos .tarj-cont-autos .tarj-autos p {
+  font-size: medium;
+  color: #fff;
+}
+.main-autos .produc-autos .tarj-cont-autos .tarj-autos button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-autos .produc-autos .tarj-cont-autos .tarj-autos button:hover {
+  background-color: #218838;
+}
+
+#seguros .seguros-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #111111;
+  color: #fff;
+}
+#seguros .seguros-main div p {
+  font-size: large;
+}
+#seguros .seguros-main .cont-seguros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+#seguros .seguros-main .cont-seguros .img-seguro {
+  width: 100%;
+  height: 50vh;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#seguros .seguros-main .cont-seguros .img-seguro img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: fill;
+}
+#seguros .tabla-seg {
+  background-color: #494949;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+main .soporte {
+  background-color: #494949;
+  height: 10vh;
+}
+main .soporte div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .soporte div p {
+  color: #fff;
+  text-align: center;
+  font-size: x-large;
+  margin: 10px;
+}
+main .contacto {
+  background-color: #111111;
+  height: 70vh;
+  align-items: center;
+  display: flex;
+}
+main .contacto div {
+  background-color: #494949;
+  align-self: center;
+  border-radius: 20px;
+}
+main .contacto div form button {
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #111111;
+  padding: 10px 60px;
+  font-size: large;
 }
 
 footer {

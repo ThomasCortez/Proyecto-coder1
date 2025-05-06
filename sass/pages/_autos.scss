@@ -1,4 +1,4 @@
-.main-motos {
+.main-autos {
     display: flex; 
     gap: 20px; 
     padding: 20px;
@@ -25,19 +25,20 @@
             }
         }
     }
-    .produc-motos {
+    .produc-autos {
         flex: 3; 
         display: flex;
         flex-direction: column;
-        background-color: #022a53;
+        border-radius: 10px;
         padding: 10px;
+        background-color: #022a53;
         h2 {
             margin-bottom: 20px;
             color: $color-let;
         }
-        .tarj-cont-motos {
+        .tarj-cont-autos {
             @include contenedor;
-            .tarj-motos {
+            .tarj-autos {
                 background-color: $color-sec;
                 border-radius: 10px;
                 text-align: center;
