@@ -2,18 +2,115 @@
 
 @media (max-width: 1200px) {
     .div-text p {
-    font-size: 30px;
+        font-size: 30px;
     }
 }
 @media (max-width: 900px) {
     .cont-tarj {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        grid-template-columns: 1fr; 
+    }
+    .presentacion > div {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .presentacion img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 8px;
     }
 }
 @media (max-width: 800px) {
     .hero-sec h2 {
-            font-size: 50px;
+        font-size: 50px;
+    }
+}
+//-----Celulares-----//
+@media (max-width: 600px) {
+header {
+    nav{
+        div {
+            div {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            a {
+                img {
+                    width: 120px;
+                    height: auto;
+                }
+                h1 {
+                    font-size: 1.2rem;
+                    padding: 8px;
+                    border-radius: 18px;
+                    text-align: left;
+                    width: 100%;
+                }
+            }
+            }
         }
+        }
+    }
+    //-----Autos-----//
+.main-autos {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    .filtros {
+        .produc-autos {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            .tarj-cont-autos {
+                flex-direction: column;
+                gap: 15px;
+                .tarj-autos {
+                    img {
+                        height: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+    //-----Motos-----//
+    .main-motos {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        .filtros {
+            .produc-motos {
+                width: 100%;
+                padding: 10px;
+                border-radius: 8px;
+                .tarj-cont-motos {
+                    flex-direction: column;
+                    gap: 15px;
+                    .tarj-motos {
+                        img {
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //-----Seguros-----//
+    .cont-seguros {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
 }

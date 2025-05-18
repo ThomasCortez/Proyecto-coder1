@@ -20,9 +20,12 @@
     p {
         font-size: xx-large;
         backdrop-filter: blur(3px);
+        background-color: rgba(0, 0, 0, 0.8);
         border-radius: 30px;
-        color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255,);
         font-weight: 200;
+        padding-left: 7px;
+        padding-right: 7px;
     }
     .linkbutton {
         @include boton($color-let, #494949); 
